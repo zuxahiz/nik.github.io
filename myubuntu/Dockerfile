@@ -50,4 +50,6 @@ RUN echo "export PATH=$PATH:/usr/local/arm/gcc-linaro-4.9.4-2017.01-x86_64_arm-l
 
 RUN apt-get install git vim wget -y
 
+COPY ./sources.list /etc/apt/sources.list
+
 CMD ["/bin/bash"]
